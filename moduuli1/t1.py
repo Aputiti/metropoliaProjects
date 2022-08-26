@@ -1,2 +1,2 @@
-name = input("Kerro nimesi: ")
+name = input("Kerro nimi: ")
 print("Hei, " + name + "!")
