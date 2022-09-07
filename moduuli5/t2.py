@@ -6,7 +6,7 @@ print("\nSyötä lukuja ja kun olet valmis, syötä tyhjä merkkijono.\n"
 
 userNumberListString = []
 userNumberListInt = []
-userNumber = (input("Syötä luku: "))
+userNumber = input("Syötä luku: ")
 
 while userNumber != "":
     userNumberListString.append(userNumber)

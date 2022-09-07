@@ -1,7 +1,8 @@
 isNotPrimeNum = False
 userNum = int(input("Check if this number is a prime number: "))
 
-if userNum > 1:
+# Assuming 1 is a prime number
+if userNum >= 1:
     for i in range(2, userNum):
         # If there is a number found that is exactly divisible by something else than one and the userNum itself
         if userNum % i == 0:
