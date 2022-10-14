@@ -31,7 +31,7 @@ user_country = "N/A"
 lat = "N/A"
 long = "N/A"
 
-API_KEY = 'AIzaSyDmKMxviK5Ko5HOaVKglXa2XxFCHedrm2g'
+API_KEY = 'YOUR-API-KEY-HERE'
 
 geolocator = Nominatim(user_agent="geoAPI", timeout=3)
 
