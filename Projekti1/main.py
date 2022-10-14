@@ -5,7 +5,7 @@
 # Last edit done on 13.10.2022.
 
 """
---> IN ORDER TO USE THIS PROGRAM YOU NEED GEOPY, PILLOW, REQUESTS AND "GOOGLEMAPS" LIBRARY, A PLACEHOLDER PHOTO,
+--> IN ORDER TO USE THIS PROGRAM YOU NEED GEOPY, PILLOW, REQUESTS AND "GOOGLEMAPS" LIBRARIES, A PLACEHOLDER PHOTO,
 --> CORRECT IMAGE FILE PATH(S), THE RIGHT AIRPORT DATABASE (FLIGHT_GAME) CONNECTED AND A WORKING GOOGLE API KEY.
 --> IF YOU DON'T HAVE A GOOGLE API KEY THE PICTURE PART OF THE PROGRAM WON'T WORK AND YOU WILL BE MET WITH ERRORS.
 """
@@ -21,8 +21,8 @@ import requests
 
 
 # connecting to database - USE YOUR OWN LOGIN DETAILS IN ORDER TO WORK CORRECTLY
-connection = mysql.connector.connect(host='localhost', port=3306, database='flight_game', user='aputiti',
-                                     password='apu123', autocommit=True)
+connection = mysql.connector.connect(host='localhost', port=3306, database='flight_game', user='USERNAME HERE',
+                                     password='PASSWORD HERE', autocommit=True)
 
 continent_chosen = 0
 user_continent = "N/A"
