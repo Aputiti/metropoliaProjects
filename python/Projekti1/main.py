@@ -10,6 +10,10 @@
 --> IF YOU DON'T HAVE A GOOGLE API KEY THE PICTURE PART OF THE PROGRAM WON'T WORK AND YOU WILL BE MET WITH ERRORS.
 """
 
+"""
+SET USERNAME, PASS (FOR MYSQL) AND API KEY!!!
+"""
+
 from tkinter import *
 from PIL import ImageTk, Image
 import mysql.connector
