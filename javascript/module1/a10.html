@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript assignments</title>
+</head>
+<body>
+    <h1>Dice logic!</h1>
+    <p id="target"></p>
+    <script defer>
+        'use strict';
+        const diceAmount = parseInt(prompt('Number of dice:'));
+        const diceEyeSum = parseInt(prompt('Sum of the eye numbers:'));
+
+        function rollDice() {
+          return Math.floor(Math.random() * 6) + 1;
+        }
+
+        function rollNumOfDice(dAmount) {
+          let diceSum = 0;
+          for (let i = 0; i < dAmount; i++) {
+            diceSum += rollDice();
+          }
+          return diceSum;
+        }
+
+        function rollSim(dAmount, simAmount) {
+          let diceRolls = [];
+          let countWantedSum = 0;
+          let probability;
+          for (let i = 0; i < simAmount; i++) {
+            diceRolls.push(rollNumOfDice(dAmount));
+          }
+          for (const value of diceRolls) {
+            if (value === diceEyeSum) {
+              countWantedSum += 1;
+            }
+          }
+          probability = (countWantedSum * 100) / simAmount;
+          return probability;
+        }
+
+        document.querySelector('#target').innerHTML = `Probability to get sum ${diceEyeSum}
+         with ${diceAmount} dice is ${rollSim(diceAmount, 10000)}%`;
+    </script>
+</body>
+</html>

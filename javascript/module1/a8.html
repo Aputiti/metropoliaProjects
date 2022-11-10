@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript assignments</title>
+</head>
+<body>
+    <h1>Leap years!</h1>
+    <p id="years"></p>
+    <ul id="target"></ul>
+    <script defer>
+        'use strict';
+        const startYear = parseInt(prompt('Please enter the start year:'));
+        const endYear = parseInt(prompt('Please enter the end year:'));
+        let checkYear = startYear;
+        document.querySelector('#years').innerHTML += `Leap years in range ${startYear} - ${endYear}:`;
+
+        for (checkYear; checkYear <= endYear; checkYear++) {
+          if (checkYear % 4 === 0 && checkYear % 100 === 0) {
+            if (checkYear % 400 === 0) {
+              document.querySelector('#target').innerHTML += `<li>${checkYear}</li>`;
+            }
+          } else if (checkYear % 4 === 0) {
+            document.querySelector('#target').innerHTML += `<li>${checkYear}</li>`;
+          }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript assignments</title>
+</head>
+<body>
+    <h1>Roots!</h1>
+    <p id="target"></p>
+    <script defer>
+        'use strict';
+        if (confirm('Should I calculate the root?') === true) {
+          const userNum = parseFloat(prompt('Enter the number to get its square root:'));
+          if (userNum < 0) {
+            document.querySelector('#target').innerHTML = 'The square root of a negative number is not defined!';
+          } else {
+            document.querySelector('#target').innerHTML = 'The square root of ' + userNum + ' is ' + Math.sqrt(userNum) + '!';
+          }
+        } else {
+          document.querySelector('#target').innerHTML = 'The square root it not calculated!';
+        }
+    </script>
+</body>
+</html>

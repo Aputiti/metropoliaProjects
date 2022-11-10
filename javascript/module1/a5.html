@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript assignments</title>
+</head>
+<body>
+    <h1>Check the year!</h1>
+    <p id="target"></p>
+    <script defer>
+        'use strict';
+        const userYear = parseInt(prompt('Please enter the year and I will tell you if it\'s a leap year:'));
+        if (userYear % 4 === 0 && userYear % 100 === 0) {
+          if (userYear % 400 === 0) {
+            document.querySelector('#target').innerHTML = 'Year ' + userYear + ' is a leap year!';
+          } else {
+            document.querySelector('#target').innerHTML = 'Year ' + userYear + ' is not a leap year!';
+          }
+        } else if (userYear % 4 === 0) {
+          document.querySelector('#target').innerHTML = 'Year ' + userYear + ' is a leap year!';
+        } else {
+          document.querySelector('#target').innerHTML = 'Year ' + userYear + ' is not a leap year!';
+        }
+    </script>
+</body>
+</html>

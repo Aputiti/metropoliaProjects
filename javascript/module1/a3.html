@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript assignments</title>
+</head>
+<body>
+    <h1>Basic math!</h1>
+    <p id="target"></p>
+    <script defer>
+        'use strict';
+        let firstInt, secondInt, thirdInt;
+
+        firstInt = parseInt(prompt('Type the first integer:'));
+        secondInt =  parseInt(prompt('Type the second integer:'));
+        thirdInt = parseInt(prompt('Type the third integer:'));
+
+        const intSum = firstInt + secondInt + thirdInt;
+        const intProduct = firstInt * secondInt * thirdInt;
+        const intAverage = (firstInt + secondInt + thirdInt) / 3;
+
+        document.querySelector('#target').innerHTML = 'Some data about your integers, sum: ' +
+            '' + intSum + ', product: ' + intProduct + ', average: ' + intAverage + '.';
+    </script>
+</body>
+</html>

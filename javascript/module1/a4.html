@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript assignments</title>
+</head>
+<body>
+    <h1>Welcome to Hogwarts School of Witchcraft and Wizardry!</h1>
+    <p id="target"></p>
+    <script defer>
+        'use strict';
+        const userName = prompt('New student, please insert your name:');
+        const randNum = Math.floor(Math.random() * 4) + 1;
+        let userClass;
+
+        if (randNum === 1) {
+          userClass = 'Gryffindor';
+        } else if (randNum === 2) {
+          userClass = 'Slytherin';
+        } else if (randNum === 3) {
+          userClass = 'Hufflepuff';
+        } else {
+          userClass = 'Ravenclaw';
+        }
+
+        document.querySelector('#target').innerHTML = 'Hello ' + userName + '. You are ' + userClass + '!';
+    </script>
+</body>
+</html>

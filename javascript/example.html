@@ -5,11 +5,41 @@
     <title>JavaScript testing</title>
 </head>
 <body>
-    <script>
+    <h1>Greetings, mate!</h1>
+    <p>Check the console!</p>
+    <p id="target"></p>
+    <script defer>
         'use strict';
+        /*
+        let kelvin, celsius;
+        const kelvinvalue = -273.15;
 
-        console.log('I have awaken!');
+        kelvin = parseFloat(prompt('Insert temperature in Kelvin-degrees:'));
+        celsius = kelvin + kelvinvalue;
 
+        console.log('Inserted Kelvins ' + kelvin + ' are ' + celsius.toFixed(4) + ' Celsius degrees!');
+        */
+
+        let lunchPrice;
+        const personType = prompt('Are you a (S)tudent, (W)orker or (O)ther?').toLowerCase();
+
+        switch (personType) {
+          case 's':
+            lunchPrice = 3.20;
+            break;
+          case 'w':
+            lunchPrice = 6.10;
+            break;
+          case 'o':
+            lunchPrice = 8;
+            break;
+          default:
+            alert('Error! You entered a wrong type! Restart!')
+        }
+
+        if (lunchPrice >= 0) {
+          console.log(`Your lunch will cost ${lunchPrice} €`)
+        }
     </script>
 </body>
 </html>

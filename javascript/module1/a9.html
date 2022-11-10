@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript assignments</title>
+</head>
+<body>
+    <h1>Prime numbers!</h1>
+    <p id="target"></p>
+    <script defer>
+        'use strict';
+        const checkNum = parseInt(prompt('Check if an integer is a prime number:'));
+        let isPrime = true;
+        // Assuming int 1 is a prime number
+        if (checkNum >= 1) {
+          for (let i = 2; i < checkNum; i++) {
+            if (checkNum % i === 0) {
+              isPrime = false;
+              break;
+            }
+          }
+          if (isPrime) {
+            document.querySelector('#target').innerHTML = `${checkNum} is a prime number!`;
+          } else {
+            document.querySelector('#target').innerHTML = `${checkNum} is not a prime number!`;
+          }
+        } else {
+          document.querySelector('#target').innerHTML = `${checkNum} is not a prime number!`;
+        }
+    </script>
+</body>
+</html>

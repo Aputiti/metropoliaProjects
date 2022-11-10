@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript assignments</title>
+</head>
+<body>
+    <h1>Take a chance!</h1>
+    <p id="target"></p>
+    <script defer>
+        'use strict';
+        const drAmount = parseInt(prompt('How many dice rolls?'));
+        let drSum = 0;
+        for (let i = 0; i < drAmount; i++) {
+          drSum += Math.floor(Math.random() * 6) + 1;
+        }
+        document.querySelector('#target').innerHTML = 'You rolled the dice ' +
+            drAmount + ' times. The sum of the dice rolls is ' + drSum + '!';
+    </script>
+</body>
+</html>
