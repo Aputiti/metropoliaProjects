@@ -1,0 +1,197 @@
+html {
+  font-family: Courier, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+.container {
+  width: 80rem;
+  margin: auto;
+}
+
+header {
+  background: rgb(214,218,115);
+  background: linear-gradient(180deg, rgba(214,218,115,1) 0%, rgba(204,204,204,1) 100%);
+  padding: 1rem;
+  color: black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+}
+
+.mainh {
+  background: rgb(231,229,216);
+  background: linear-gradient(0deg, rgba(231,229,216,1) 0%, rgba(243,255,136,1) 100%);
+  padding: 1rem;
+  color: black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px dotted black;
+  text-align: left;
+}
+
+input[type=text] {
+  padding: 8px;
+  width: 12.2%;
+  margin-right: 10px;
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  box-shadow: 0 0 2px 1px gray;
+  transition: all 0.15s ease-in-out;
+  font-family: Courier, sans-serif;
+}
+
+input[type=text]:hover {
+  box-shadow: 0 0 2px 2px gray;
+  width: 15.6%;
+}
+
+input[type=text]:focus {
+  width: 15.6%;
+}
+
+input[type=submit] {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  box-shadow: 0 0 2px 1px gray;
+  transition: all 0.15s ease-in-out;
+  font-family: Courier, sans-serif;
+}
+
+input[type=submit]:hover {
+  box-shadow: 0 0 2px 2px gray;
+  background-color: #ebf2d2;
+}
+
+.img {
+  box-sizing: content-box;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: all 0.1s ease-in-out;
+}
+
+.img:hover {
+  transform: scale(105%);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 0 3px 3px gray;
+}
+
+.defmenu {
+  font-size: 158px;
+  filter: drop-shadow(0px 1px 4px #594e17) grayscale(50%);
+}
+
+.iframe {
+  height: 600px;
+  width: 880px;
+  border-radius: 15px;
+}
+
+form {
+  display: flex;
+}
+
+.maina {
+  color: blue;
+}
+
+main {
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-left: 2px inset black;
+  border-right: 2px solid black;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.link {
+  color: midnightblue;
+}
+
+article {
+  width: calc(100% / 3 - 2rem);
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 1px black solid;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 3px 6px 6px #ccc;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+
+article h2 {
+  margin: 0;
+  text-align: center;
+  padding: 0 0 0.5rem 0;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+}
+
+figcaption {
+  text-align: center;
+}
+
+footer {
+  background: rgb(231,229,216);
+  background: linear-gradient(180deg, rgba(231,229,216,1) 0%, rgba(243,255,136,1) 100%);
+  text-align: center;
+  padding: 1rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px dotted black;
+}
+
+dialog {
+  position: fixed;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  display: block;
+  border-radius: 15px;
+}
+
+dialog[open] {
+  opacity: 1;
+}
+
+dialog::backdrop {
+  background: rgb(0 0 0 / 0.8);
+}
+
+dialog span {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+  filter: drop-shadow(2px 2px 2px #000);
+}

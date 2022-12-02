@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVmaze (TV shows)</title>
+    <script src="main.js" defer></script>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="mainh">
+            <h1>TVmaze - Search</h1>
+            <form action="https://api.tvmaze.com/search/shows">
+                <input id="query" name="q" type="text" placeholder="Search for TV shows">
+                <input type="submit" value="Search">
+            </form>
+        </header>
+        <main>
+            <section id="results">
+                <!-- results here -->
+                <p id="default" class="defmenu">&#129488;</p>
+            </section>
+        </main>
+        <footer>
+            <p>Find your favourite TV shows!</p>
+        </footer>
+    </div>
+</body>
+</html>
