@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Airport Book</title>
+    <script src="airportWeb.js" defer></script>
+    <link href="airportWeb.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header class="mainh">
+    <h1>The Airport Book</h1>
+</header>
+<main>
+    <section class="content">
+        <!-- content here -->
+        <div class="parent">
+            <div class="arrowLeft">
+                <img class="imgL" src="arrowIcon.jpeg">
+            </div>
+            <div class="instructionsDiv">
+                <div class="instructions">
+                    <p class="insText">Instructions</p>
+                    <p class="insTextMain">Welcome! Scroll down to find the book, and go through each page to learn
+                        about all the airports around the world. Navigate through the pages using next and prev buttons.
+                        Enjoy the journey!</p>
+                </div>
+            </div>
+            <div class="arrowRight">
+                <img class="imgR" src="arrowIcon.jpeg">
+            </div>
+        </div>
+        <div class="middleText">
+            <p class="mainText">The Airport Book, a book authored in 2022 by Abdur Abou Ramadan, Ahmed Ezzaroui, Sami
+                Abo Ramadan and Juan Rosales, is a book containing information and pictures about every single airport
+                in planet Earth. Let your inner airport nerd take control and go check out the book down below.</p>
+        </div>
+        <div class="bookSection">
+
+            <div class="book">
+                <input type="checkbox" id="c1">
+                <input type="checkbox" id="c2">
+                <input type="checkbox" id="c3">
+                <input type="checkbox" id="c4">
+                <input type="checkbox" id="c5">
+
+                <div class="bb"></div>
+
+                <div id="cover"></div>
+                <div class="flip-book">
+
+                    <div class="flip" id="p1">
+                        <div class="back" style="">
+
+                            <h2>Select a continent:</h2><br>
+
+                            <button class="continentBtn" id="afButton">AF</button>
+                            <br>
+                            <button class="continentBtn" id="asButton">AS</button>
+                            <br>
+                            <button class="continentBtn" id="euButton">EU</button>
+                            <br>
+                            <button class="continentBtn" id="naButton">NA</button>
+                            <br>
+                            <button class="continentBtn" id="saButton">SA</button>
+                            <br>
+                            <button class="continentBtn" id="ocButton">OC</button>
+                            <br>
+                            <button class="continentBtn" id="anButton">AN</button>
+
+                            <label class="back-btn" for="c1">Prev</label>
+                        </div>
+                        <div class="front"
+                             style="height: 550px; width: 400px; background:floralwhite; color:black; border: 4px solid black; border-left-width: 6px; border-right-width: 3px;">
+                            <img id="page1Img" src="page1pic.jpeg" alt="airport600x300" style="border-radius: 5px">
+                            <h1>The Airport Book</h1>
+                            <h2>Made in Finland</h2>
+                            <h3>1 of 1</h3>
+                            <label class="next-btn" for="c1" id="open1"
+                                   style="color:black;border:2px solid black;">Open</label>
+                        </div>
+                    </div>
+
+                    <div class="flip" id="p2">
+                        <div class="back">
+
+                            <h2>Select a country:</h2><br>
+
+                            <select id="countryList" name="countryList" size="14"
+                                    style="font-family: Courier, sans-serif; font-size: 15px; padding: 12px 22px 12px 12px; border: 2px solid black; border-radius: 7px;">
+
+                            </select>
+
+                            <label class="back-btn" for="c2">Prev</label>
+                        </div>
+                        <div class="front">
+
+                            <h2>Selected continent:</h2><br>
+
+                            <p id="continentText" style="margin-top: 110px; font-size: 25px;">Empty!</p>
+                            <p id="continentFunText"
+                               style="margin-top: 110px; font-size: 15px; padding-left: 25px; padding-right: 25px;">Fun
+                                fact pending...</p>
+
+                            <label id="continentChosenButton" class="next-btn" for="c2">Next</label>
+                        </div>
+                    </div>
+
+                    <div class="flip" id="p3">
+                        <div class="back">
+
+                            <h2>Select an airport:</h2><br>
+
+                            <select id="airportList" name="airportList" size="14"
+                                    style="font-family: Courier, sans-serif; font-size: 15px; padding: 12px 22px 12px 12px; border: 2px solid black; border-radius: 7px; width: 300px; overflow-x: auto;">
+
+                            </select>
+
+                            <label class="back-btn" for="c3">Prev</label>
+                        </div>
+                        <div class="front">
+
+                            <h2>Enter it here:</h2><br>
+
+                            <input type="text" id="countryBox" name="country" placeholder="Country name" size="16">
+
+                            <label id="countryChosenButton" class="next-btn" for="c3">Next</label>
+                        </div>
+                    </div>
+
+                    <div class="flip" id="p4">
+                        <div class="back">
+
+                            <h2>Information:</h2><br>
+
+                            <textarea disabled id="airportData" name="airportInfo" rows="16" cols="30"
+                                      spellcheck="false"
+                                      style="background-color: white; color: black; border: 2px solid black; border-radius: 7px; padding: 7px; font-family: Courier, sans-serif; font-size: 15px; resize: none;">Loading...</textarea>
+
+                            <label class="back-btn" for="c4">Prev</label>
+                        </div>
+
+                        <div class="front">
+
+                            <h2>Enter it here:</h2><br>
+
+                            <input type="text" id="airportBox" name="airport" placeholder="Airport name" size="23">
+
+                            <label id="airportChosenButton" class="next-btn" for="c4">Next</label>
+                        </div>
+                    </div>
+
+                    <div class="flip" id="p5">
+                        <div class="back"
+                             style="color:black; background:floralwhite; border: 4px solid black; border-right-width: 6px; border-left-width: 3px;">
+                            <h4>The End</h4><br><h5>Thank you for reading.</h5><br><h6>Abdur Abou Ramadan<br>Ahmed
+                            Ezzaroui<br>Sami Abo Ramadan<br>Juan Rosales</h6>
+                            <label class="back-btn" for="c5" style="color:black;border:2px solid black;">Prev</label>
+                        </div>
+                        <div class="front" style="height: 550px; width: 400px;">
+
+                            <h2>Satellite image:</h2><br>
+
+                            <img id="airportImg" src="https://via.placeholder.com/280x280/FFFFFF/000000?text=Loading"
+                                 alt="airport">
+                            <p style="font-family: Courier, sans-serif; font-size: 13px">Try hovering over the
+                                image!</p>
+
+                            <label class="next-btn" for="c5">Next</label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>The Airport Book contains currently 70 942 airports located around the world!</p>
+</footer>
+</body>
+</html>
