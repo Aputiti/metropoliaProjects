@@ -2,7 +2,7 @@
 
 My code for assignments.
 
-Updated project (v2) walkthrough:
+Updated project (The Airport Book) (v2) walkthrough:
 
 
 
@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/111983344/210260800-6696071f-1fad-44b5
 
 
 
-Screenshots about the second project:
+Screenshots about the project (The Airport Book) (v1):
 
 ![Screenshot 2022-12-14 at 11 04 17](https://user-images.githubusercontent.com/111983344/207556962-62a46b6a-8b96-4405-9a16-548edeac68a0.png)
 
