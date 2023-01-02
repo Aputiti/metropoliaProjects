@@ -2,6 +2,13 @@
 
 My code for assignments.
 
+Updated project (v2) walkthrough:
+
+
+
+https://user-images.githubusercontent.com/111983344/210260800-6696071f-1fad-44b5-a91b-5e9a76cfbe59.mp4
+
+
 
 Screenshots about the second project:
 
