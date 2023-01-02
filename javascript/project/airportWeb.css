@@ -6,10 +6,68 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
+    animation: 0.5s ease-out 0s 1 bodyAnim;
 }
 
-.content {
-    align-content: center;
+.body1 {
+
+}
+
+@keyframes bodyAnim {
+    0% {
+        background-color: floralwhite;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    animation: 0.5s ease-out 0s 1 headerAnim;
+    border-bottom: 3px dashed black;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,250,240,1) 100%);
+}
+
+@keyframes headerAnim {
+    0% {
+        transform: translateY(-100%);
+        filter: opacity(0);
+    }
+
+    100% {
+        transform: translateY(0);
+        filter: opacity(100%);
+    }
+}
+
+.headerNav {
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+    color: black;
+}
+
+.headerNavOn {
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+    color: black;
+    filter: opacity(55%);
+}
+
+.headerNav:hover {
+    text-decoration: wavy underline 2px;
+    color: saddlebrown;
+    cursor: pointer;
+}
+
+.headerNavOn:hover {
+    text-decoration: wavy underline 2px;
+    color: saddlebrown;
+    cursor: pointer;
 }
 
 h1 {
@@ -18,7 +76,22 @@ h1 {
 
 .parent {
     display: flex;
-    margin-top: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    width: 100%;
+    animation: 0.5s ease-out 0s 1 parentAnim;
+}
+
+@keyframes parentAnim {
+    0% {
+        filter: opacity(0);
+    }
+
+    100% {
+        filter: opacity(100%);
+    }
 }
 
 .instructions {
@@ -120,16 +193,29 @@ h1 {
 }
 
 .middleText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
     text-align: center;
     border-top: 5px dotted black;
     border-bottom: 5px dotted black;
     width: 60rem;
-    margin: auto;
-    margin-bottom: 150px;
-    margin-top: 300px;
     background: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 250, 240, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    animation: 0.5s ease-out 0s 1 middleAnim;
 }
+
+@keyframes middleAnim {
+    0% {
+        filter: opacity(0);
+    }
+
+    100% {
+        filter: opacity(100%);
+    }
+}
+
 
 .mainText {
     font-size: 30px;
@@ -143,19 +229,37 @@ h1 {
 
 
 .bookSection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -46%);
     margin: 0;
     padding: 0;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-family: Courier, sans-serif;
     background: white;
+    animation: 0.5s ease-out 0s 1 bookAnim;
+}
+
+@keyframes bookAnim {
+    0% {
+        filter: opacity(0);
+    }
+
+    100% {
+        filter: opacity(100%);
+    }
 }
 
 input[type=checkbox] {
     display: none;
+}
+
+input[type=text]:focus {
+    outline: none !important;
 }
 
 #countryBox {
@@ -183,16 +287,17 @@ input[type=checkbox] {
     background: floralwhite;
 }
 
-#airportImg {
+#airportMap {
     border: 2px solid black;
     border-radius: 7px;
-    transition: all 0.15s ease-out;
+    transition: all 0.2s ease-out;
 }
 
-#airportImg:hover {
+#airportMap:hover {
     border-radius: 0;
-    transform: scale(130%);
+    transform: scale(120%);
     box-shadow: 1px 1px 17px 3px gray;
+    border-color: saddlebrown;
 }
 
 h1 {
@@ -241,7 +346,7 @@ h6 {
     left: 0;
     transform-origin: center left;
     transform-style: preserve-3d;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
     color: #000;
 
 }
@@ -276,6 +381,7 @@ h6 {
 }
 
 .continentBtn {
+    transition: all 0.1s ease-out;
     font-family: Courier, sans-serif;
     font-size: 15px;
     border: 2px solid black;
@@ -287,7 +393,137 @@ h6 {
     margin-bottom: 5px;
 }
 
+.continentBtn:hover {
+    transform: scale(110%);
+    border-color: saddlebrown;
+    box-shadow: 1px 0 4px 1px gray;
+}
+
+.testAnim {
+    position: relative;
+    animation: changeContinent 0.3s 1;
+}
+
+.testAnimFun {
+    position: relative;
+    animation: changeContinentFun 0.2s 1;
+}
+
+.testBtnAnim {
+    animation: continentBtnClick 0.1s 1;
+}
+
+@keyframes changeContinent {
+    0% {
+        filter: opacity(0);
+        left: -70px;
+    }
+    50% {
+
+    }
+    100% {
+        filter: opacity(100%);
+        left: 0;
+    }
+}
+
+@keyframes changeContinentFun {
+    0% {
+        filter: opacity(0);
+        left: -20px;
+    }
+    50% {
+
+    }
+    100% {
+        filter: opacity(100%);
+        left: 0;
+    }
+}
+
+@keyframes continentBtnClick {
+    0% {
+
+    }
+    30% {
+        transform: scale(100%);
+        box-shadow: 0 0 0 0;
+    }
+    100% {
+
+    }
+}
+
+#countryBox {
+    transition: all 0.2s ease-out;
+}
+
+#countryBox:hover {
+    transform: scale(120%);
+    box-shadow: 1px 0 8px 2px gray;
+    border-color: saddlebrown;
+}
+
+#countryBox:focus {
+    transform: scale(120%);
+    box-shadow: 1px 0 8px 2px saddlebrown;
+    border-color: saddlebrown;
+}
+
+#airportBox {
+    transition: all 0.2s ease-out;
+}
+
+#airportBox:hover {
+    transform: scale(120%);
+    box-shadow: 1px 0 8px 2px gray;
+    border-color: saddlebrown;
+}
+
+#airportBox:focus {
+    transform: scale(120%);
+    box-shadow: 1px 0 8px 2px saddlebrown;
+    border-color: saddlebrown;
+}
+
+#countryList {
+    transition: all 0.2s ease-out;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+#countryList:hover {
+    transform: scale(120%);
+    box-shadow: 2px 0 8px 3px gray;
+    border-color: saddlebrown;
+}
+
+#airportList {
+    transition: all 0.2s ease-out;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+#airportList:hover {
+    transform: scale(120%);
+    box-shadow: 2px 0 8px 3px gray;
+    border-color: saddlebrown;
+}
+
+#airportData {
+    transition: all 0.2s ease-out;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+#airportData:hover {
+    transform: scale(120%);
+    box-shadow: 2px 0 8px 3px gray;
+    border-color: saddlebrown;
+}
+
 .next-btn {
+    transition: all 0.2s ease-out;
     position: absolute;
     border: 2px solid black;
     border-radius: 7px;
@@ -298,7 +534,12 @@ h6 {
     color: black;
 }
 
+.next-btn:hover {
+    filter: opacity(50%);
+}
+
 .back-btn {
+    transition: all 0.2s ease-out;
     position: absolute;
     border: 2px solid black;
     border-radius: 7px;
@@ -307,6 +548,10 @@ h6 {
     right: 13px;
     cursor: pointer;
     color: black;
+}
+
+.back-btn:hover {
+    filter: opacity(50%);
 }
 
 #p1 {

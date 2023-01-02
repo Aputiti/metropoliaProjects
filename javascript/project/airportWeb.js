@@ -22,7 +22,7 @@ const airportList = document.getElementById('airportList');
 const airportBox = document.getElementById('airportBox');
 const airportChosenButton = document.getElementById('airportChosenButton');
 const airportDataList = document.getElementById('airportData');
-const airportImage = document.getElementById('airportImg');
+const airportMap = document.getElementById('airportMap');
 
 let userContinent = 'NA';
 
@@ -114,10 +114,10 @@ async function getAirportData() {
   console.log(jsonResponseGeo.Data);
   airportDataList.value += '\n\nLocation data: ' + jsonResponseGeo.Data;
 
-  const responseImg = await fetch(`http://localhost:3000/img/${jsonResponse.DataTest[0][4]}/${jsonResponse.DataTest[0][5]}`);
-  const jsonResponseImg = await responseImg.json();
+  const responseMap = await fetch(`http://localhost:3000/map/${jsonResponse.DataTest[0][4]}/${jsonResponse.DataTest[0][5]}`);
+  const jsonResponseMap = await responseMap.json();
 
-  airportImage.src = jsonResponseImg.Image;
+  airportMap.src = jsonResponseMap.Map;
 }
 
 function button1Press() {
@@ -130,6 +130,21 @@ function afPress() {
 
   userContinent = 'AF';
   console.log(userContinent);
+
+  continentText.classList.remove('testAnim');
+  setTimeout(() => {
+    continentText.classList.add('testAnim');
+  },1);
+
+  continentFunText.classList.remove('testAnimFun');
+  setTimeout(() => {
+    continentFunText.classList.add('testAnimFun');
+  },1);
+
+  afButton.classList.remove('testBtnAnim');
+  setTimeout(() => {
+    afButton.classList.add('testBtnAnim');
+  },1);
 }
 function asPress() {
   continentText.innerText = 'Asia.';
@@ -137,6 +152,21 @@ function asPress() {
 
   userContinent = 'AS';
   console.log(userContinent);
+
+  continentText.classList.remove('testAnim');
+  setTimeout(() => {
+    continentText.classList.add('testAnim');
+  },1);
+
+  continentFunText.classList.remove('testAnimFun');
+  setTimeout(() => {
+    continentFunText.classList.add('testAnimFun');
+  },1);
+
+  asButton.classList.remove('testBtnAnim');
+  setTimeout(() => {
+    asButton.classList.add('testBtnAnim');
+  },1);
 }
 function euPress() {
   continentText.innerText = 'Europe.';
@@ -144,6 +174,21 @@ function euPress() {
 
   userContinent = 'EU';
   console.log(userContinent);
+
+  continentText.classList.remove('testAnim');
+  setTimeout(() => {
+    continentText.classList.add('testAnim');
+  },1);
+
+  continentFunText.classList.remove('testAnimFun');
+  setTimeout(() => {
+    continentFunText.classList.add('testAnimFun');
+  },1);
+
+  euButton.classList.remove('testBtnAnim');
+  setTimeout(() => {
+    euButton.classList.add('testBtnAnim');
+  },1);
 }
 function naPress() {
   continentText.innerText = 'North America.';
@@ -151,6 +196,21 @@ function naPress() {
 
   userContinent = 'NA';
   console.log(userContinent);
+
+  continentText.classList.remove('testAnim');
+  setTimeout(() => {
+    continentText.classList.add('testAnim');
+  },1);
+
+  continentFunText.classList.remove('testAnimFun');
+  setTimeout(() => {
+    continentFunText.classList.add('testAnimFun');
+  },1);
+
+  naButton.classList.remove('testBtnAnim');
+  setTimeout(() => {
+    naButton.classList.add('testBtnAnim');
+  },1);
 }
 function saPress() {
   continentText.innerText = 'South America.';
@@ -158,6 +218,21 @@ function saPress() {
 
   userContinent = 'SA';
   console.log(userContinent);
+
+  continentText.classList.remove('testAnim');
+  setTimeout(() => {
+    continentText.classList.add('testAnim');
+  },1);
+
+  continentFunText.classList.remove('testAnimFun');
+  setTimeout(() => {
+    continentFunText.classList.add('testAnimFun');
+  },1);
+
+  saButton.classList.remove('testBtnAnim');
+  setTimeout(() => {
+    saButton.classList.add('testBtnAnim');
+  },1);
 }
 function ocPress() {
   continentText.innerText = 'Oceania.';
@@ -165,6 +240,21 @@ function ocPress() {
 
   userContinent = 'OC';
   console.log(userContinent);
+
+  continentText.classList.remove('testAnim');
+  setTimeout(() => {
+    continentText.classList.add('testAnim');
+  },1);
+
+  continentFunText.classList.remove('testAnimFun');
+  setTimeout(() => {
+    continentFunText.classList.add('testAnimFun');
+  },1);
+
+  ocButton.classList.remove('testBtnAnim');
+  setTimeout(() => {
+    ocButton.classList.add('testBtnAnim');
+  },1);
 }
 function anPress() {
   continentText.innerText = 'Antarctica.';
@@ -172,6 +262,21 @@ function anPress() {
 
   userContinent = 'AN';
   console.log(userContinent);
+
+  continentText.classList.remove('testAnim');
+  setTimeout(() => {
+    continentText.classList.add('testAnim');
+  },1);
+
+  continentFunText.classList.remove('testAnimFun');
+  setTimeout(() => {
+    continentFunText.classList.add('testAnimFun');
+  },1);
+
+  anButton.classList.remove('testBtnAnim');
+  setTimeout(() => {
+    anButton.classList.add('testBtnAnim');
+  },1);
 }
 
 function continentChosen() {

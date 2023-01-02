@@ -1,11 +1,10 @@
-import json
 import mysql.connector
 from flask import Flask
 from flask_cors import CORS
 from geopy.geocoders import Nominatim
 
-connection = mysql.connector.connect(host='localhost', port=3306, database='flight_game', user='YOUR-USERNAME',
-                                     password='YOUR-PASSWORD', autocommit=True)
+connection = mysql.connector.connect(host='localhost', port=3306, database='flight_game', user='YOUR-USERNAME-HERE',
+                                     password='YOUR-PASSWORD-HERE', autocommit=True)
 
 APIKEY = "YOUR-APIKEY-HERE"
 
@@ -71,13 +70,16 @@ def get_geo_data(lat, long):
     return answer
 
 
-@app.route('/img/<lat>/<long>')
-def get_img(lat, long):
-    image = 'https://maps.googleapis.com/maps/api/staticmap?center=' + lat + '%2C' + long \
-            + '&zoom=14&scale=1&size=280x280&maptype=satellite&format=png&key=' + APIKEY
+@app.route('/map/<lat>/<long>')
+def get_map(lat, long):
+    # map1 = 'https://maps.googleapis.com/maps/api/staticmap?center=' + lat + '%2C' + long \
+    #      + '&zoom=14&scale=1&size=280x280&maptype=satellite&format=png&key=' + APIKEY
+
+    map1 = 'https://www.google.com/maps/embed/v1/view?key=' + APIKEY + '&center=' + lat + \
+           ',' + long + '&zoom=13&maptype=satellite&language=en'
 
     answer = {
-        "Image": str(image)
+        "Map": str(map1)
     }
 
     return answer
