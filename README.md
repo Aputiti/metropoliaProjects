@@ -1,8 +1,8 @@
-# My Projects 💻
+# My projects 💻
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Updated project (The Airport Book) (v2) walkthrough:
+Updated project (The Airport Book v2) walkthrough:
 
 - Instead of the website being vertically scrollable the content has been cut into three sections
 - New animations and visual upgrades to the book
