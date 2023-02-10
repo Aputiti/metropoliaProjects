@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/111983344/210260800-6696071f-1fad-44b5
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### The Airport Simulator
+### Airport Simulator
 
 **My first python project (used Tkinter for GUI):**
 - Search for airports categorized by continent and country
