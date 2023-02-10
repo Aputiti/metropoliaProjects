@@ -1,0 +1,671 @@
+html {
+    font-family: Courier, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    animation: 0.5s ease-out 0s 1 bodyAnim;
+}
+
+.body1 {
+
+}
+
+@keyframes bodyAnim {
+    0% {
+        background-color: floralwhite;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    animation: 0.5s ease-out 0s 1 headerAnim;
+    border-bottom: 3px dashed black;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,250,240,1) 100%);
+}
+
+@keyframes headerAnim {
+    0% {
+        transform: translateY(-100%);
+        filter: opacity(0);
+    }
+
+    100% {
+        transform: translateY(0);
+        filter: opacity(100%);
+    }
+}
+
+.headerNav {
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+    color: black;
+}
+
+.headerNavOn {
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+    color: black;
+    filter: opacity(55%);
+}
+
+.headerNav:hover {
+    text-decoration: wavy underline 2px;
+    color: saddlebrown;
+    cursor: pointer;
+}
+
+.headerNavOn:hover {
+    text-decoration: wavy underline 2px;
+    color: saddlebrown;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+.parent {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    width: 100%;
+    animation: 0.5s ease-out 0s 1 parentAnim;
+}
+
+@keyframes parentAnim {
+    0% {
+        filter: opacity(0);
+    }
+
+    100% {
+        filter: opacity(100%);
+    }
+}
+
+.instructions {
+    transition: all 0.25s ease-out;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 15px;
+    width: 20rem;
+    flex: 1;
+    padding-top: 60px;
+    padding-bottom: 380px;
+    position: relative;
+    box-shadow: 0 0 4px 3px gray;
+    background-color: floralwhite;
+}
+
+.instructions:hover {
+    transform: scale(110%) rotate(-0.004turn);
+    border: 5px dashed black;
+    border-radius: 30px;
+    box-shadow: 10px 0 13px 3px gray;
+    background-color: floralwhite;
+}
+
+.instructions:hover .insText {
+    opacity: 0;
+    transform: scale(70%) rotate(-0.02turn);
+    transform-origin: bottom center;
+}
+
+.instructions:hover .insTextMain {
+    opacity: 1;
+    transform: scale(100%) rotate(0turn);
+}
+
+.insText {
+    transition: all 0.15s ease-in-out;
+    position: absolute;
+    font-size: 28px;
+    font-weight: bold;
+    left: 60px;
+    padding-top: 110px;
+}
+
+.insTextMain {
+    transform: scale(95%) rotate(0.002turn);
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    font-size: 22px;
+    padding-left: 29px;
+    padding-right: 29px;
+    opacity: 0;
+}
+
+.arrowLeft {
+    flex: 1;
+    margin: auto;
+    text-align: center;
+}
+
+.arrowRight {
+    flex: 1;
+    margin: auto;
+    text-align: center;
+}
+
+.imgL {
+    transform: scale(50%);
+    animation: leftArrow 1.5s infinite;
+}
+
+@keyframes leftArrow {
+    0% {
+        margin-right: 0;
+    }
+    50% {
+        margin-right: 50px;
+    }
+    100% {
+        margin-right: 0;
+    }
+}
+
+.imgR {
+    transform: rotate(180deg) scale(50%);
+    animation: rightArrow 1.5s infinite;
+}
+
+@keyframes rightArrow {
+    0% {
+        margin-left: 0;
+    }
+    50% {
+        margin-left: 50px;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+.middleText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    text-align: center;
+    border-top: 5px dotted black;
+    border-bottom: 5px dotted black;
+    width: 60rem;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 250, 240, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    animation: 0.5s ease-out 0s 1 middleAnim;
+}
+
+@keyframes middleAnim {
+    0% {
+        filter: opacity(0);
+    }
+
+    100% {
+        filter: opacity(100%);
+    }
+}
+
+
+.mainText {
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding: 20px 20px 20px 20px;
+    font-family: 'Waiting for the Sunrise', cursive;
+    color: saddlebrown;
+}
+
+/* BOOK CSS STARTS HERE */
+
+
+.bookSection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -46%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Courier, sans-serif;
+    background: white;
+    animation: 0.5s ease-out 0s 1 bookAnim;
+}
+
+@keyframes bookAnim {
+    0% {
+        filter: opacity(0);
+    }
+
+    100% {
+        filter: opacity(100%);
+    }
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=text]:focus {
+    outline: none !important;
+}
+
+#countryBox {
+    margin-top: 110px;
+    font-family: Courier, sans-serif;
+    border-radius: 7px;
+    border: 2px solid black;
+    padding: 7px;
+    font-size: 15px;
+}
+
+#airportBox {
+    margin-top: 110px;
+    font-family: Courier, sans-serif;
+    border-radius: 7px;
+    border: 2px solid black;
+    padding: 7px;
+    font-size: 15px;
+}
+
+#page1Img {
+    width: 75%;
+    margin-top: 90px;
+    border: 2px dashed black;
+    background: floralwhite;
+}
+
+#airportMap {
+    border: 2px solid black;
+    border-radius: 7px;
+    transition: all 0.2s ease-out;
+}
+
+#airportMap:hover {
+    border-radius: 0;
+    transform: scale(120%);
+    box-shadow: 1px 1px 17px 3px gray;
+    border-color: saddlebrown;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+h2 {
+    margin-top: 100px;
+    font-size: 22px;
+}
+
+h4 {
+    margin-top: 110px;
+    font-size: 40px;
+}
+
+h5 {
+    font-size: 17px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+.book {
+    display: flex;
+}
+
+#cover {
+    width: 400px;
+    height: 550px;
+}
+
+.flip-book {
+    width: 400px;
+    height: 550px;
+    position: relative;
+    perspective: 1500px;
+}
+
+.flip {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: center left;
+    transform-style: preserve-3d;
+    transition: 0.5s ease-in-out;
+    color: #000;
+
+}
+
+.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(255, 250, 240, 1) 100%);
+    box-sizing: border-box;
+    padding: 0 13px;
+    border-radius: 10px;
+    border: 1px dashed black;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 250, 240, 1) 100%);
+    border-radius: 10px;
+    border: 1px dashed black;
+}
+
+.continentBtn {
+    transition: all 0.1s ease-out;
+    font-family: Courier, sans-serif;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 7px;
+    color: black;
+    background-color: white;
+    padding: 8px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.continentBtn:hover {
+    transform: scale(110%);
+    border-color: saddlebrown;
+    box-shadow: 1px 0 4px 1px gray;
+}
+
+.testAnim {
+    position: relative;
+    animation: changeContinent 0.3s 1;
+}
+
+.testAnimFun {
+    position: relative;
+    animation: changeContinentFun 0.2s 1;
+}
+
+.testBtnAnim {
+    animation: continentBtnClick 0.1s 1;
+}
+
+@keyframes changeContinent {
+    0% {
+        filter: opacity(0);
+        left: -70px;
+    }
+    50% {
+
+    }
+    100% {
+        filter: opacity(100%);
+        left: 0;
+    }
+}
+
+@keyframes changeContinentFun {
+    0% {
+        filter: opacity(0);
+        left: -20px;
+    }
+    50% {
+
+    }
+    100% {
+        filter: opacity(100%);
+        left: 0;
+    }
+}
+
+@keyframes continentBtnClick {
+    0% {
+
+    }
+    30% {
+        transform: scale(100%);
+        box-shadow: 0 0 0 0;
+    }
+    100% {
+
+    }
+}
+
+#countryBox {
+    transition: all 0.2s ease-out;
+}
+
+#countryBox:hover {
+    transform: scale(120%);
+    box-shadow: 1px 0 8px 2px gray;
+    border-color: saddlebrown;
+}
+
+#countryBox:focus {
+    transform: scale(120%);
+    box-shadow: 1px 0 8px 2px saddlebrown;
+    border-color: saddlebrown;
+}
+
+#airportBox {
+    transition: all 0.2s ease-out;
+}
+
+#airportBox:hover {
+    transform: scale(120%);
+    box-shadow: 1px 0 8px 2px gray;
+    border-color: saddlebrown;
+}
+
+#airportBox:focus {
+    transform: scale(120%);
+    box-shadow: 1px 0 8px 2px saddlebrown;
+    border-color: saddlebrown;
+}
+
+#countryList {
+    transition: all 0.2s ease-out;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+#countryList:hover {
+    transform: scale(120%);
+    box-shadow: 2px 0 8px 3px gray;
+    border-color: saddlebrown;
+}
+
+#airportList {
+    transition: all 0.2s ease-out;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+#airportList:hover {
+    transform: scale(120%);
+    box-shadow: 2px 0 8px 3px gray;
+    border-color: saddlebrown;
+}
+
+#airportData {
+    transition: all 0.2s ease-out;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+#airportData:hover {
+    transform: scale(120%);
+    box-shadow: 2px 0 8px 3px gray;
+    border-color: saddlebrown;
+}
+
+.next-btn {
+    transition: all 0.2s ease-out;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 4px;
+    bottom: 13px;
+    right: 13px;
+    cursor: pointer;
+    color: black;
+}
+
+.next-btn:hover {
+    filter: opacity(50%);
+}
+
+.back-btn {
+    transition: all 0.2s ease-out;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 4px;
+    bottom: 13px;
+    right: 13px;
+    cursor: pointer;
+    color: black;
+}
+
+.back-btn:hover {
+    filter: opacity(50%);
+}
+
+#p1 {
+    z-index: 5;
+    margin: 5px;
+}
+
+#p2 {
+    z-index: 4;
+    margin: 5px;
+}
+
+#p3 {
+    z-index: 3;
+    margin: 5px;
+}
+
+#p4 {
+    z-index: 2;
+    margin: 5px;
+}
+
+#p5 {
+    z-index: 1;
+    margin: 5px;
+}
+
+#c1:checked ~ .flip-book #p1 {
+    transform: rotateY(-180deg);
+    z-index: 1;
+}
+
+#c2:checked ~ .flip-book #p2 {
+    transform: rotateY(-180deg);
+    z-index: 2;
+}
+
+#c3:checked ~ .flip-book #p3 {
+    transform: rotateY(-180deg);
+    z-index: 3;
+}
+
+#c4:checked ~ .flip-book #p4 {
+    transform: rotateY(-180deg);
+    z-index: 4;
+}
+
+#c5:checked ~ .flip-book #p5 {
+    transform: rotateY(-180deg);
+    z-index: 5;
+}
+
+#c3:checked ~ .flip-book #p1 {
+    display: none;
+}
+
+#c4:checked ~ .flip-book #p2 {
+    display: none;
+}
+
+#c5:checked ~ .flip-book #p3 {
+    display: none;
+}
+
+
+.bb {
+    position: absolute;
+    z-index: 0;
+    width: 800px;
+    height: 550px;
+    pointer-events: none;
+    border-radius: 10px;
+
+}
+
+#c1:checked ~ .bb {
+    border: 4px solid black;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    background-color: floralwhite;
+}
+
+#c2:checked ~ .bb {
+    border: 4px solid black;
+    border-left-width: 3px;
+    border-right-width: 3px;
+}
+
+#c3:checked ~ .bb {
+    border: 4px solid black;
+    border-left-width: 3px;
+    border-right-width: 3px;
+}
+
+#c4:checked ~ .bb {
+    border: 4px solid black;
+    border-left-width: 3px;
+    border-right-width: 3px;
+}
+
+#c5:checked ~ .bb {
+    border: none;
+    background-color: transparent;
+}
+
+
+/* BOOK CSS ENDS HERE */
+
+.defmenu {
+    font-size: 158px;
+    filter: drop-shadow(0px 1px 4px #594e17) grayscale(50%);
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}

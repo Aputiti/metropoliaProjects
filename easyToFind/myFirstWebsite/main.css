@@ -1,0 +1,281 @@
+/* first time doing css -> the code very is messy */
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Patrick Hand', cursive;
+}
+
+body {
+    background-color: darkseagreen;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    background-color: slategray;
+    border-radius: 1rem;
+    border: 2px dashed red;
+}
+
+.bannergifcontainer {
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    filter: drop-shadow(0px 6px 26px darkseagreen);
+}
+
+.bannergif {
+    border-radius: 1rem;
+}
+
+.bannerinsidetext {
+    position: absolute;
+    font-size: 50px;
+    font-style: italic;
+    color: darkred;
+}
+
+.bannertext {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    font-size: 23px;
+}
+
+.bannertext2 {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 100px;
+    font-size: 23px;
+}
+
+.bannergifcontainer p {
+    transform: translateZ(50px);
+}
+
+
+.section2 {
+    display: flex;
+}
+
+.bannergif {
+    width: 90%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    background-color: #333;
+    border-radius: 1rem;
+}
+
+h1 {
+    width: 40%;
+    padding-left: 4rem;
+    color: darkseagreen;
+}
+
+h2 {
+    font-size: 55px;
+    filter: drop-shadow(0px 6px 6px darkseagreen);
+
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    background-color: #333;
+}
+
+li {
+    border: 2px solid red;
+    border-radius: 1rem;
+}
+
+li a {
+    display: block;
+    color: red;
+    text-align: center;
+    font-size: 25px;
+    width: 9rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: darkseagreen;
+    border-radius: 1rem;
+}
+
+section {
+
+}
+
+.section1 {
+    margin-top: 200px;
+    margin-bottom: 250px;
+    text-align: center;
+
+}
+
+.section2 {
+    margin-bottom: 260px;
+    text-align: left;
+}
+
+.section3 {
+    display: flex;
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+
+.product1text {
+    margin-left: 10px;
+    font-size: 23px;
+}
+
+.product2text {
+    margin-left: 10px;
+    font-size: 23px;
+}
+
+.product3text {
+    margin-left: 10px;
+    font-size: 23px;
+}
+
+article{
+    width: 100%;
+    margin: auto;
+    background-color: none;
+    padding: 0 1rem;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.glasscontainer {
+    border-style: inset;
+    border-radius: 1rem;
+    border-width: 8px;
+    padding: 5rem 4rem;
+    background-color: rgb(255 255 255 / 0.6);
+}
+
+.gifcontainer1,
+.gifcontainer2,
+.gifcontainer3 {
+    border-radius: 4%;
+    filter: blur(2px) brightness(1.1) grayscale(80%) opacity(55%);
+    box-shadow: 0 3px 10px 10px rgb(0 0 0 / 0.2);
+}
+
+.gifcontainer1:hover,
+.gifcontainer:hover,
+.gifcontainer:hover {
+    box-shadow: 0 3px 10px 10px rgb(0 0 0 / 0.2);
+    filter: blur(0px);
+}
+
+.gifcontainer1:hover {
+    filter: drop-shadow(0px 16px 20px rgb(255 251 0));
+}
+
+.gifcontainer2:hover {
+    filter: drop-shadow(0px 16px 20px pink);
+}
+
+.gifcontainer3:hover {
+    filter: drop-shadow(0px 16px 20px rgb(140 107 191));
+}
+
+.gif {
+    width: 100%;
+    height: auto;
+    border-radius: 4%;
+}
+
+.productbanner {
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    filter: drop-shadow(0px 6px 26px darkseagreen);
+}
+
+h3 {
+    margin-top: 15rem;
+    margin-left: 4rem;
+    font-size: 40px;
+    filter: drop-shadow(0px 6px 6px darkseagreen);
+}
+
+h4 {
+    font-size: 40px;
+}
+
+.firstarticle {
+    margin-left: 3rem;
+}
+
+.thirdarticle {
+    margin-right: 3rem;
+}
+
+.fourtharticle {
+
+}
+
+.fiftharticle {
+    margin-right: 3.5rem;
+}
+
+.mapimg {
+    border: 3px solid deepskyblue;
+    filter: drop-shadow(0px 6px 6px darkseagreen);
+    border-radius: 1rem;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.contact1 {
+    font-size: 40px;
+    text-align: left;
+    margin-left: 3rem;
+    filter: drop-shadow(0px 6px 6px darkseagreen);
+}
+
+.contact2 {
+    text-align: left;
+    font-style: italic;
+    margin-left: 3rem;
+    font-size: 23px;
+}
+
+.contactlast {
+    text-align: left;
+    font-style: italic;
+    margin-left: 3rem;
+    margin-bottom: 19rem;
+    font-size: 23px;
+}

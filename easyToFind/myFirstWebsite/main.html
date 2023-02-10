@@ -1,0 +1,86 @@
+<!-- first time doing html -> the code very is messy -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My HTML page</title>
+    <link href="main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>RarePoké</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <!-- main part -->
+        <section class="section1">
+            <h2 id="home">RarePoké</h2>
+            <div class="bannergifcontainer" data-tilt data-tilt-max="13" data-tilt-scale="0.9">
+                <img class="bannergif" src="gifs/bannergif1.gif" alt="gif gere">
+            </div>
+            <p class="bannertext">Hi! Welcome to RarePoké. We are selling some of the worlds most rare and unique Pokémon cards. Our product selection changes weekly. Hurry up and scroll down!</p>
+        </section>
+        <h3 id="products">Products</h3>
+        <img class="productbanner" src="imgs/productbanner2.jpeg" alt="img here">
+        <p class="bannertext2">Check our cards down below! If you want to buy something you need to contact us. You can check our contact information at the bottom of the site.  P.S. Our cards are protected behind a safety glass. In order to see them better make sure to hover over them.</p>
+        <section class="section2" aria-label="section3">
+            <article class="firstarticle" aria-label="article1">
+                <p class="product1text">Stage 2 - Xerneas GX (HP 180)</p>
+                <div class="glasscontainer">
+                    <div class="gifcontainer1" data-tilt data-tilt-glare data-tilt-max-glare="0.5" data-tilt-scale="1.35">
+                        <img class="gif" src="gifs/rare1gif.gif" alt="gif here">
+                    </div>
+                </div>
+                <p class="product1text">Only 3 cards left! Be quick!</p>
+            </article>
+            <article class="secondarticle" aria-label="article2">
+                <p class="product2text">Stage 2 - Sylveon GX (HP 200)</p>
+                <div class="glasscontainer">
+                    <div class="gifcontainer2" data-tilt data-tilt-glare data-tilt-max-glare="0.5" data-tilt-scale="1.35">
+                        <img class="gif" src="gifs/rare2gif.gif" alt="gif here">
+                    </div>
+                </div>
+                <p class="product2text">Only 1 card left! Be quick!</p>
+            </article>
+            <article class="thirdarticle" aria-label="article3">
+                <p class="product3text">Stage 2 - Lunala GX (HP 250)</p>
+                <div class="glasscontainer">
+                    <div class="gifcontainer3" data-tilt data-tilt-glare data-tilt-max-glare="0.5" data-tilt-scale="1.35">
+                        <img class="gif" src="gifs/rare3gif.gif" alt="gif here">
+                    </div>
+                </div>
+                <p class="product3text">Only 4 cards left! Be quick!</p>
+            </article>
+        </section>
+        <section class="section3" aria-label="section3">
+            <article class="fourtharticle" aria-label="article4">
+                <h4 class="contact1">Contact us</h4>
+                <p class="contact2">Visit us at:</p>
+                <p class="contact2">RarePoké</p>
+                <p class="contact2">Kanto</p>
+                <p class="contact2">Pokelandia</p>
+                <p class="contact2">Northmost Red Block</p>
+                <p class="contactlast">Phone: +1345639485</p>
+            </article>
+            <article class="fiftharticle" aria-label="article5">
+                <img class="mapimg" src="imgs/map.png" alt="pic">
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p id="contact"></p>
+    </footer>
+</div>
+<script src="vanilla-tilt.js"></script>
+</body>
+</html>
