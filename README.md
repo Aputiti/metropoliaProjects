@@ -1,8 +1,8 @@
-# myProjects 🧾
+# myProjects 🗂
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Updated project (The Airport Book v2) walkthrough:
+Updated project (The Airport Book v2):
 
 - Instead of the website being vertically scrollable the content has been cut into three sections
 - New animations and visual upgrades to the book
@@ -25,6 +25,8 @@ https://user-images.githubusercontent.com/111983344/218124152-83c514fb-5ad1-4efe
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 My first website (fictional):
+
+My first taste of html and css (+ using a js library)
 
 https://user-images.githubusercontent.com/111983344/218124442-0963b601-eca5-4b8f-89e9-b420ff896bf7.mp4
 
