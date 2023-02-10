@@ -14,10 +14,10 @@ https://user-images.githubusercontent.com/111983344/210260800-6696071f-1fad-44b5
 
 ### Airport Simulator
 
-**My first python project (used Tkinter for GUI):**
+**Most recent python project (used Tkinter for GUI):**
 - Search for airports categorized by continent and country
 - Get useful information about each airport + a satellite image
-- Database includes data about more than 71 000 airports
+- Database includes data about more than 71 000 airports (mySQL)
 
 https://user-images.githubusercontent.com/111983344/218124152-83c514fb-5ad1-4efe-afb3-e839044aaaee.mp4
 
