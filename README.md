@@ -8,6 +8,8 @@
 - New animations and visual upgrades to the book
 - Static map image upgraded to interactive map (Google API)
 
+**The Airport Book**
+
 - Searching for airports all around the world made easy in a form of a digital book
 - Get useful information quickly about each airport + a satellite map
 - Database includes data on more than 71 000 airports (using mySQL and Flask)
