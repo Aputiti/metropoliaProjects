@@ -2,7 +2,7 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### Updated project (The Airport Book v2)
+### Updated (The Airport Book v2)
 
 - Instead of the website being vertically scrollable the content has been cut into three sections
 - New animations and visual upgrades to the book
@@ -24,6 +24,9 @@ https://user-images.githubusercontent.com/111983344/218124152-83c514fb-5ad1-4efe
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### TVMaze - Search
+
+**A website where you can search for TV shows**
+- Using TVMaze API
 
 https://user-images.githubusercontent.com/111983344/218123821-a56b356e-31d0-432c-85d7-527b0fb829ec.mp4
 
